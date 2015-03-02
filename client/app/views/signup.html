@@ -1,0 +1,68 @@
+<!--<p>This is the signup view.</p>-->
+<div class="signup-container">
+  <div class="col-md-12">
+    <h3 class="signup-header">Signup as a New User</h3>
+    <hr/>
+    <br/>
+  </div>
+
+  <div class="signup-form">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="firstname">First Name</label>
+        <div class="col-md-5">
+          <input class="form-control input-md" type="text"
+                 ng-model="signup.user.firstname"
+                 id="firstname" name="firstname" placeholder="Cole"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="lastname">Last Name</label>
+        <div class="col-md-5">
+          <input class="form-control input-md" type="text"
+                 ng-model="signup.user.lastname"
+                 id="lastname" name="lastname" placeholder="Morrison"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="email">Email</label>
+        <div class="col-md-5">
+          <input class="form-control input-md" type="text"
+                 ng-model="signup.user.email"
+                 id="email" name="email" placeholder="me@jcolemorrison.com"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="password1">Password</label>
+        <div class="col-md-5">
+          <input class="form-control input-md" type="password"
+                 ng-model="signup.user.password1"
+                 id="password1" name="password1" placeholder=""/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="password2">Retype Password</label>
+        <div class="col-md-5">
+          <input class="form-control input-md" type="password"
+                 ng-model="signup.user.password2"
+                 id="password2" name="password2" placeholder=""/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="signup"></label>
+        <div class="col-md-5">
+          <button class="bt btn-success btn-block"
+                  ng-click="signup.submit()"
+                  id="signup" name="signup">
+            Signup
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
