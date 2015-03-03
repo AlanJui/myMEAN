@@ -8,7 +8,7 @@ var UserModel = require('./schemas/users');
 
 // Connections
 var developmentDb = 'mongodb://localhost/text';
-var productionDb = 'urlToYourProductionMongoDb';
+var productionDb = 'mongodb://heroku_app34531215:ccc490925@ds049181.mongolab.com:49181/heroku_app34531215';
 var usedDb;
 
 // If we're in development...
