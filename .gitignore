@@ -1,5 +1,4 @@
 .idea/
-#server/dist/
-client/node_modules/
-server/node_modules/
 data/
+server/node_modules
+client/node_modules
