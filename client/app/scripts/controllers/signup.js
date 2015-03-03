@@ -41,11 +41,11 @@ angular.module('clientApp')
       var request = $http.post('/signup', user);
 
       request.success(function (data) {
-        console.log(data.msg);
+        console.log(data);
       });
 
       request.error(function (data) {
-        console.log(data.msg);
+        console.log(data);
       });
     };
 
