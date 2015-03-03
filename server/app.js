@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
  * Route Imports
  * @type {*|exports}
  */
-var signup = require('./routes/signup');
+//var signup = require('./routes/signup');
 
 var app = express();
 
@@ -19,6 +19,12 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+/**
+ * Routes
+ * @type {*|exports}
+ */
+var router = require('./router')(app);
 
 /**
  * Development Settings
@@ -66,12 +72,5 @@ app.use(function(req, res, next) {
     err.status = 404;
     next(err);
 });
-
-/**
- * Routes
- * @type {*|exports}
- */
-
-app.use('/signup', signup);
 
 module.exports = app;
